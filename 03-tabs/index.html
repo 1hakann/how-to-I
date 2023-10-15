@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-Tabs</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+<body>
+    <h2>Tabs</h2>
+    <p>Click on the x button in the top right corner to close the current tab:</p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'opt1')" id="defaultOpen">Header I</button>
+      <button class="tablinks" onclick="openTab(event, 'opt2')">Header II</button>
+      <button class="tablinks" onclick="openTab(event, 'opt3')">Header III</button>
+    </div>
+
+    <div id="opt1" class="tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <h3>Header I</h3>
+      <p>Received shutters expenses ye he pleasant. Drift as blind above at up. No up simple county stairs do should praise as. Drawings sir gay together landlord had law smallest.</p>
+    </div>
+    
+    <div id="opt2" class="tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <h3>Header II</h3>
+      <p>Formerly welcomed attended declared met say unlocked. Jennings outlived no dwelling denoting in peculiar as he believed.</p> 
+    </div>
+
+    <div id="opt3" class="tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <h3>Header III</h3>
+      <p>Behaviour excellent middleton be as it curiosity departure ourselves.</p>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
